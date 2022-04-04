@@ -3,10 +3,14 @@ import React from "react";
 
 import TodoContainer from "./components/TodoContainer";
 
+import "./App.css";
+
 function App() {
   return (
     <div className="App" id="root">
-      <TodoContainer />
+      <React.StrictMode>
+        <TodoContainer />
+      </React.StrictMode>
     </div>
   )
 }
